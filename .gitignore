@@ -42,6 +42,3 @@ next-env.d.ts
 # Private
 /src/app/api
 /env
-cert.crt
-cert.key
-server.js
