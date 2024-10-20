@@ -1,0 +1,4 @@
+export const CONSTANTS = {
+  CAMP_LIST_COUNT_LIMIT: 5,
+  LOADING_DELAY_TIME: 300
+};

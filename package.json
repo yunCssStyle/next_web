@@ -1,0 +1,51 @@
+{
+  "name": "minewarz-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "env-cmd -f ./env/.env.local next dev ",
+    "dev:HTTPS": "env-cmd -f ./env/.env.local.https node server.js ",
+    "dev:prod": "env-cmd -f ./env/.env.production-1 next dev",
+    "dev:qa": "env-cmd -f ./env/.env.qa next dev",
+    "build": "env-cmd -f .env.production next build",
+    "build:dev": "env-cmd -f ./env/.env.local-build next build",
+    "build:prod1": "env-cmd -f ./env/.env.production-1 next build",
+    "build:prod2": "env-cmd -f ./env/.env.production-2 next build",
+    "build:qa": "env-cmd -f ./env/.env.qa next build",
+    "start": "next start -p 8080",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.3",
+    "@sentry/nextjs": "^7.92.0",
+    "@svgr/webpack": "^8.0.1",
+    "@tanstack/react-query": "^4.32.6",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "axios": "^1.4.0",
+    "detect-browser": "^5.3.0",
+    "dotenv": "^16.3.1",
+    "env-cmd": "^10.1.0",
+    "eslint": "8.46.0",
+    "eslint-config-next": "^14.0.3",
+    "icon-sdk-js": "^1.5.2",
+    "ioredis": "^5.3.2",
+    "jose": "^4.15.4",
+    "lodash": "^4.17.21",
+    "next": "14.0.3",
+    "next-auth": "4.24.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swiper": "^10.2.0",
+    "typescript": "5.1.6",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^4.32.5",
+    "@types/chrome": "^0.0.246",
+    "@types/lodash": "^4.14.198",
+    "@types/node": "^20.8.10"
+  }
+}
